@@ -93,7 +93,7 @@ export default function Home() {
       const stepTimer = setTimeout(() => setStep("matching_resume"), 3500);
       const stepTimer2 = setTimeout(() => setStep("writing"), 7000);
 
-      const res = await fetch("http://localhost:8000/analyze", {
+      const res = await fetch("https://smart-job-application-agent.onrender.com/analyze", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ job_description: jd, resume }),
