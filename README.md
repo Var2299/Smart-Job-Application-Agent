@@ -27,7 +27,7 @@ User Input (JD + Resume)
 ```
 
 Each agent only receives the previous agent's output — not the full original text.
-This keeps each Gemini call small and well within the free tier limits.
+This keeps each Gemini call small and well within tier limits.
 
 ---
 
