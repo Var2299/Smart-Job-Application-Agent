@@ -37,6 +37,19 @@ This keeps each Gemini call small and well within the free tier limits.
 
 ---
 
+## Tech Stack
+
+| Layer | Technology |
+|-------|-----------|
+| AI Agents | Google ADK + Gemini 1.5 Flash |
+| Backend | Python, FastAPI |
+| Frontend | Next.js 14, TypeScript |
+| Styling | CSS (no framework) |
+| Backend Deploy | Render |
+| Frontend Deploy | Vercel |
+
+---
+
 ### 2. Backend
 
 ```bash
