@@ -87,7 +87,7 @@ async def run_agent(agent: LlmAgent, message: str) -> str:
     """Creates a fresh session, runs the agent, returns the text response."""
     session_id = str(uuid.uuid4())
 
-    await session_service.create_session(
+    session_service.create_session(
         app_name=APP_NAME,
         user_id="user",
         session_id=session_id,
