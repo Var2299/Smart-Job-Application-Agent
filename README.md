@@ -41,9 +41,9 @@ This keeps each Gemini call small and well within the free tier limits.
 
 | Layer | Technology |
 |-------|-----------|
-| AI Agents | Google ADK + Gemini 1.5 Flash |
+| AI Agents | Google ADK + Gemini 2.5 Flash |
 | Backend | Python, FastAPI |
-| Frontend | Next.js 14, TypeScript |
+| Frontend | Next.js, TypeScript |
 | Styling | CSS (no framework) |
 | Backend Deploy | Render |
 | Frontend Deploy | Vercel |
