@@ -31,14 +31,6 @@ This keeps each Gemini call small and well within the free tier limits.
 
 ---
 
-## Setup
-
-### 1. Get a free Gemini API key
-
-Go to [https://aistudio.google.com/apikey](https://aistudio.google.com/apikey) and create a key.
-
----
-
 ### 2. Backend
 
 ```bash
@@ -99,22 +91,6 @@ smart-job-agent/
 
 ---
 
-## How to Explain This in an Interview
-
-**"What did you build?"**
-> A multi-agent pipeline that takes a job description and resume, then runs three specialized AI agents in sequence — one analyzes the JD requirements, one scores the resume against those requirements, and one rewrites the resume bullets and cover letter to close the gaps.
-
-**"Why three agents instead of one prompt?"**
-> Each agent has a single focused job. Agent 1 doesn't know it'll be used for gap analysis — it just extracts requirements cleanly. This separation makes each output more precise and the system easier to debug or improve independently.
-
-**"How did you handle token limits on the free tier?"**
-> Each agent only receives the *previous agent's output*, not the original full text. So Agent 2 sees a clean requirements list (~300 tokens), not the full JD (~800 tokens). Total per run is around 4,000 tokens — Gemini Flash free tier allows 1 million tokens per minute.
-
-**"What tech stack?"**
-> Python + Google ADK for the agent pipeline, FastAPI to expose it as an API, and Next.js + TypeScript for the frontend.
-
----
-
 ## API Reference
 
 ### POST /analyze
@@ -137,13 +113,3 @@ Response:
 ```
 
 ---
-
-## Free Tier Limits (Gemini 1.5 Flash)
-
-| Limit | Value | Your usage per run |
-|-------|-------|--------------------|
-| Requests / day | 1,500 | 3 requests |
-| Tokens / minute | 1,000,000 | ~4,000 tokens |
-| Requests / minute | 15 | 3 requests |
-
-You can do ~500 full runs per day on the free tier.
