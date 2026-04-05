@@ -1,0 +1,14 @@
+# Node dependencies
+node_modules/
+.next/
+out/
+build/
+
+# Python dependencies
+venv/
+__pycache__/
+*.py[cod]
+.env
+
+# Misc
+.DS_Store
