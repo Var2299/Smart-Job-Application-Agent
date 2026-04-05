@@ -31,6 +31,12 @@ This keeps each Gemini call small and well within the free tier limits.
 
 ---
 
+### UI
+
+<img width="1212" height="817" alt="image" src="https://github.com/user-attachments/assets/e5802087-d632-4923-a0be-89daeba60336" />
+
+---
+
 ### 2. Backend
 
 ```bash
