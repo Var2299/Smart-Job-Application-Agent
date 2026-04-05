@@ -19,7 +19,7 @@ app = FastAPI(title="Smart Job Agent")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://smart-job-application-agent.vercel.app"],
+    allow_origins=["https://smart-job-application-agent.vercel.app", "https://*.vercel.app"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
